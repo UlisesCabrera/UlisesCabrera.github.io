@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="2016-Portfolio">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ulises Cabrera</title>
-    <link href="vendors/material-design-lite/material.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.grey-deep_orange.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <script type="text/javascript" src="vendors/angular/angular.min.js"></script>
-
-
+    <script type="text/javascript" src="vendors/angular-route/angular-route.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -17,9 +18,68 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <h1>Hello, 2016!</h1>
-
-    <script type="text/javascript" src="vendors/material-design-lite/material.min.js"></script>    
+  <body ng-controller="HomePageController">
+    <!-- The drawer is always open in large screens. The header is always shown,
+      even in small screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+                mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                      mdl-textfield--floating-label mdl-textfield--align-right">
+            <label class="mdl-button mdl-js-button mdl-button--icon"
+                   for="fixed-header-drawer-exp">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" name="sample"
+                     id="fixed-header-drawer-exp">
+            </div>
+          </div>
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+          <a href="#/" >Blog</a>
+          <a href="#/fullStack">Full-Stack Projects</a>
+          <a >Front-End Projects</a>
+          <a >Microservices</a>
+        </div>        
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Ulises Cabrera</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" target="_blank" href="https://www.linkedin.com/in/ucabrera"><i class='fa fa-linkedin'></i> LinkedIn</a>    
+          <a class="mdl-navigation__link" target="_blank" href="https://github.com/UlisesCabrera"><i class='fa fa-github'></i> GitHub</a>
+          <a class="mdl-navigation__link" target="_blank" href="http://codepen.io/ulisescabrera/"><i class='fa fa-codepen'></i> CodePen</a>
+          <a class="mdl-navigation__link" target="_blank" href="http://freecodecamp.com/ulisescabrera"><i class='fa fa-fire'></i> FreeCodeCamp</a>
+          <a class="mdl-navigation__link" target="_blank" href="mailto:ucabrera@outlook.com"><i class='fa fa-envelope-o'></i> Email</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+            <!-- My content will go here-->
+            <div ng-view></div>
+		</div>
+      </main>
+    </div>
+    
+    
+    
+    <!-- Vendors-->
+    <script type="text/javascript" src="vendors/material-design-lite/material.min.js"></script>
+    
+    <!-- Sub Modules-->
+    <script type="text/javascript" src="js/homePage/homePage.module.js"></script>
+    <script type="text/javascript" src="js/fullStack/fullStack.module.js"></script>
+    
+    <!-- Services-->
+    <script type="text/javascript" src="js/fullStack/services/fullStack.service.js"></script>
+    
+    <!-- Controllers-->
+    <script type="text/javascript" src="js/homePage/controllers/homePage.controller.js"></script>
+    <script type="text/javascript" src="js/fullStack/controllers/fullStack.controller.js"></script>
+    
+    <!-- Main Module-->
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
