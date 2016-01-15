@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-2016",
+  "version": "1.0.0",
+  "description": "2016 version of my portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ulises Cabrera",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.7.2"
+  }
+}

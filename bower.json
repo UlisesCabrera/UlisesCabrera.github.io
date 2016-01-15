@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-2016",
+  "description": "2016 version of my portfolio",
+  "main": "index.html",
+  "authors": [
+    "Ulises Cabrera"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "material-design-lite": "~1.0.6",
+    "jquery": "~2.2.0",
+    "font-awesome": "~4.5.0"
+  }
+}
