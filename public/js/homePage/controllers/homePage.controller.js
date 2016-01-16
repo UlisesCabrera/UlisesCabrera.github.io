@@ -11,8 +11,8 @@ angular.module("HomePageModule")
                 case '/fullStack':
                     location = 'fullStack';
                     break;
-                case '/front-end':
-                    location = 'front-end';
+                case '/frontEnd':
+                    location = 'frontEnd';
                     break;
                 case '/microservice':
                     location = 'microservice';
