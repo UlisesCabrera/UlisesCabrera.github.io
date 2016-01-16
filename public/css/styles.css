@@ -1,3 +1,25 @@
+body {
+    background-image: url('../images/white_brick_wall.png');
+}
+
+/** Drawer Styles**/
+.mdl-layout__drawer {
+    background-image: url('../images/dark_brick_wall.png');
+    color:rgb(255,110,64);
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+    color:white;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+    color:#424242;
+}
+
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+    margin-top:20px;
+    color:#fff;
+}
 
 /** Tabs Styles**/
 .nav-bar {
@@ -9,6 +31,7 @@
     margin:15px auto;
     text-align:center;
 }
+
 .nav-tab__container {
     float:left;
     width:50%;
@@ -37,9 +60,18 @@
     width:90%;
     margin: 0 auto;
 }
+.mdl-card__title {
+    height: 300px;
+    background-size: cover;
+}
+.mdl-card__title-text {
+    color: white;
+    padding:10px;
+    background-color:rgb(158,158,158);
+}
 
 /** Desktop Styles**/
-@media (min-width: 768px) {
+@media (min-width: 815px) {
     .nav-tab__container {
             width:25%;
     }
