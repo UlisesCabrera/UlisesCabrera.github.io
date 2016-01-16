@@ -22,7 +22,7 @@
     <!-- The drawer is always open in large screens. The header is always shown,
       even in small screens. -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
-                mdl-layout--fixed-header">
+                mdl-layout--fixed-header mdl-layout--fixed-tabs">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
           <div class="mdl-layout-spacer"></div>
@@ -38,11 +38,21 @@
             </div>
           </div>
         </div>
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-          <a href="#/" >Blog</a>
-          <a href="#/fullStack">Full-Stack Projects</a>
-          <a >Front-End Projects</a>
-          <a >Microservices</a>
+        <div class="nav-bar">
+          <div class="nav-bar__inner">
+            <div class="nav-tab__container">
+              <a class="nav-tab" href="#/" ng-class="{'nav-tab-active' : current() == 'home' }" >Home</a>
+            </div>
+            <div class="nav-tab__container">
+              <a class="nav-tab" href="#/fullStack" ng-class="{'nav-tab-active' : current() == 'fullStack' }">Full-Stack Projects</a>
+            </div>
+            <div class="nav-tab__container">
+              <a class="nav-tab" ng-class="{'nav-tab-active' : current() == 'front-end' }">Front-End Projects</a>
+            </div>
+            <div class="nav-tab__container">
+               <a class="nav-tab" ng-class="{'nav-tab-active' : current() == 'microservice' }">Microservices</a>
+            </div>
+          </div>
         </div>        
       </header>
       <div class="mdl-layout__drawer">
@@ -59,9 +69,19 @@
         <div class="page-content">
             <!-- My content will go here-->
             <div ng-view></div>
-		</div>
+      		 <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__left-section">
+              <div class="mdl-logo">Title</div>
+              <ul class="mdl-mini-footer__link-list">
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy & Terms</a></li>
+              </ul>
+            </div>
+          </footer>   
+		  </div>
       </main>
     </div>
+
     
     
     

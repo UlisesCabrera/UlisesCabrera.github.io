@@ -1,0 +1,46 @@
+
+/** Tabs Styles**/
+.nav-bar {
+    display:block;
+}
+
+.nav-bar__inner {
+    width:90%;
+    margin:15px auto;
+    text-align:center;
+}
+.nav-tab__container {
+    float:left;
+    width:50%;
+    margin:10px auto;
+    padding-bottom:10px;
+}
+
+.nav-tab {
+    padding: 15px;
+    text-decoration: none;
+    color:#fff;
+    font-size :1.2rem;
+}
+
+.nav-tab:hover {
+    color:rgb(255,110,64);
+}
+
+.nav-tab-active {
+    border-bottom: 1px black solid;
+    color:#424242;
+}
+
+/** Card Styles**/
+.mdl-card {
+    width:90%;
+    margin: 0 auto;
+}
+
+/** Desktop Styles**/
+@media (min-width: 768px) {
+    .nav-tab__container {
+            width:25%;
+    }
+}
