@@ -70,6 +70,10 @@ body {
     background-color:rgb(158,158,158);
 }
 
+.mdl-card_school-text {
+    color: rgb(255,110,64);
+}
+
 /** Desktop Styles**/
 @media (min-width: 815px) {
     .nav-tab__container {
