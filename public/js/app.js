@@ -1,9 +1,9 @@
-angular.module('2016-Portfolio',['HomePageModule', 'ngRoute','FullStackModule','FrontEndModule','MicroserviceModule'])
+angular.module('2016-Portfolio',['HomePageModule', 'ngRoute','FullStackModule','FrontEndModule','MicroserviceModule','BlogModule'])
 .config(function($routeProvider, $locationProvider){
 	$routeProvider
 		.when('/', {
-			templateUrl:'./partials/main.html',
-			controller: 'HomePageController'
+			templateUrl:'./partials/blog.html',
+			controller: 'BlogController'
 		})
 		.when('/fullStack', {
 			templateUrl:'./partials/fullstack.html',

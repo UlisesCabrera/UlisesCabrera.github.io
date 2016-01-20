@@ -6,7 +6,7 @@ angular.module("HomePageModule")
             var location;
             switch ($location.path()) {
                 case '/':
-                    location = 'home';
+                    location = 'blog';
                     break;
                 case '/fullStack':
                     location = 'fullStack';
@@ -18,11 +18,9 @@ angular.module("HomePageModule")
                     location = 'microservice';
                     break;                    
                 default:
-                    location = 'home';
+                    location = 'blog';
             }
         
             return location;
         };
-        
-        $scope.appName = "Ulises Cabrera";
 }]);

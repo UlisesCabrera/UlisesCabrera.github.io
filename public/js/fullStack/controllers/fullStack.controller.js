@@ -1,5 +1,5 @@
 angular.module("FullStackModule")
-    .controller("FullStackController",["$scope",'FullStackFactory', function($scope, FullStackFactory){
+    .controller("FullStackController",["$scope",'fullStackFactory', function($scope, fullStackFactory){
         // getting projects from the factory
-        $scope.projects = FullStackFactory.projects;
+        $scope.projects = fullStackFactory.projects;
 }]);

@@ -1,5 +1,5 @@
 angular.module("MicroserviceModule")
-    .factory('MicroserviceFactory',[function() {
+    .factory('microserviceFactory',[function() {
         
         var projectsFactory = { 
             projects :[

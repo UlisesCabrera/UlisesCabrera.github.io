@@ -1,5 +1,5 @@
 angular.module("MicroserviceModule")
-    .controller("MicroserviceController",["$scope",'MicroserviceFactory', function($scope, MicroserviceFactory){
+    .controller("MicroserviceController",["$scope",'microserviceFactory', function($scope, microserviceFactory){
         // getting projects from the factory
-        $scope.projects = MicroserviceFactory.projects;
+        $scope.projects = microserviceFactory.projects;
 }]);

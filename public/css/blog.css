@@ -1,0 +1,368 @@
+/*
+Theme Name: Twenty Fifteen
+Description: Used to style the TinyMCE editor.
+*/
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Body
+ * 2.0 - Typography
+ * 3.0 - Elements
+ * 4.0 - Alignment
+ * 5.0 - Caption
+ * 6.0 - Galleries
+ * 7.0 - Audio / Video
+ * 8.0 - RTL
+ */
+/**
+ * 1.0 Body
+ */
+
+#blog div {
+  color: #333;
+  font-family: "Noto Serif", serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.6471;
+  margin: 20px 40px;
+  max-width: 660px;
+  vertical-align: baseline;
+}
+#blog h1,
+#blog h2,
+#blog h3,
+#blog h4,
+#blog h5,
+#blog h6 {
+  clear: both;
+  font-weight: 700;
+  margin: 56px 0 28px;
+}
+#blog h1 {
+  font-size: 35px;
+  line-height: 1.2308;
+}
+#blog h2 {
+  font-size: 29px;
+  line-height: 1.2069;
+}
+#blog h3 {
+  font-size: 24px;
+  line-height: 1.1667;
+}
+#blog h4 {
+  font-size: 20px;
+  line-height: 1.4;
+}
+#blog h5,
+#blog h6 {
+  font-size: 17px;
+  letter-spacing: 0.1em;
+  line-height: 1.2353;
+  text-transform: uppercase;
+}
+#blog h1:first-child,
+#blog h2:first-child,
+#blog h3:first-child,
+#blog h4:first-child,
+#blog h5:first-child,
+#blog h6:first-child {
+  margin-top: 0;
+}
+#blog p {
+  margin: 0 0 28px;
+}
+#blog b,
+#blog strong {
+  font-weight: 700;
+}
+#blog dfn,
+#blog cite,
+#blog em,
+#blog i {
+  font-style: italic;
+}
+#blog blockquote {
+  border-left: 4px solid #707070;
+  color: #707070;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.8182;
+  margin: 0 0 35px -21px;
+  padding-left: 17px;
+}
+#blog blockquote > blockquote {
+  margin-left: 0;
+}
+#blog blockquote p {
+  margin-bottom: 35px;
+}
+#blog blockquote > p:last-child {
+  margin-bottom: 0;
+}
+#blog blockquote cite,
+#blog blockquote small {
+  color: #333;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 17px;
+  line-height: 1.6471;
+}
+#blog blockquote em,
+#blog blockquote i,
+#blog blockquote cite {
+  font-style: normal;
+}
+#blog blockquote strong,
+#blog blockquote b {
+  font-weight: 400;
+}
+#blog address {
+  font-style: italic;
+  margin: 0 0 28px;
+}
+#blog code,
+#blog kbd,
+#blog tt,
+#blog var,
+#blog samp,
+#blog pre {
+  font-family: Inconsolata, monospace;
+}
+#blog pre {
+  background-color: #fcfcfc;
+  border: 1px solid #eaeaea;
+  font-size: 17px;
+  line-height: 1.2353;
+  margin-bottom: 28px;
+  max-width: 100%;
+  overflow: auto;
+  padding: 14px;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+#blog abbr[title] {
+  border-bottom: 1px dotted #eaeaea;
+  cursor: help;
+}
+#blog mark,
+#blog ins {
+  background-color: #fff9c0;
+  text-decoration: none;
+}
+#blog sup,
+#blog sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+#blog sup {
+  bottom: 1ex;
+}
+#blog sub {
+  top: .5ex;
+}
+#blog small {
+  font-size: 75%;
+}
+#blog big {
+  font-size: 125%;
+}
+#blog hr {
+  background-color: #eaeaea;
+  border: 0;
+  height: 1px;
+  margin-bottom: 28px;
+}
+#blog ul,
+#blog ol {
+  margin: 0 0 28px 0;
+  padding: 0;
+}
+#blog ul {
+  list-style: disc;
+}
+#blog ol {
+  list-style: decimal;
+}
+#blog li > ul,
+#blog li > ol {
+  margin: 0 0 0 23px;
+}
+#blog dl {
+  margin: 0 0 28px;
+}
+#blog dt {
+  font-weight: bold;
+}
+#blog dd {
+  margin: 0 0 28px;
+}
+#blog table,
+#blog th,
+#blog td,
+#blog .mce-item-table,
+#blog .mce-item-table th,
+#blog .mce-item-table td {
+  border: 1px solid #eaeaea;
+}
+#blog table a {
+  color: #333;
+}
+#blog table,
+#blog .mce-item-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-width: 1px 0 0 1px;
+  margin: 0 0 28px;
+  width: 100%;
+}
+#blog table th,
+#blog .mce-item-table th,
+#blog table caption {
+  border-width: 0 1px 1px 0;
+  font-family: "Noto Serif", serif;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 7px;
+  text-align: left;
+  vertical-align: baseline;
+}
+#blog table td,
+#blog .mce-item-table td {
+  border-width: 0 1px 1px 0;
+  font-family: "Noto Serif", serif;
+  font-size: 17px;
+  padding: 7px;
+  vertical-align: baseline;
+}
+#blog img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+#blog figure {
+  margin: 0;
+}
+#blog del {
+  opacity: 0.8;
+}
+#blog a {
+  border-bottom: 1px solid #333;
+  color: #333;
+  text-decoration: none;
+}
+#blog .alignleft {
+  float: left;
+  margin: 7px 28px 28px 0;
+}
+#blog .alignright {
+  float: right;
+  margin: 7px 0 28px 28px;
+}
+#blog .aligncenter {
+  clear: both;
+  display: block;
+  margin: 7px auto;
+}
+#blog .wp-caption {
+  background: transparent;
+  border: none;
+  color: #707070;
+  font-family: "Noto Sans", sans-serif;
+  margin: 0 0 28px 0;
+  max-width: 100%;
+  padding: 0;
+  text-align: inherit;
+}
+#blog .wp-caption.alignleft {
+  margin: 7px 28px 21px 0;
+}
+#blog .wp-caption.alignright {
+  margin: 7px 0 21px 28px;
+}
+#blog .wp-caption.aligncenter {
+  margin: 7px auto;
+}
+#blog .wp-caption .wp-caption-text,
+#blog .wp-caption-dd {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 7px 0;
+}
+#blog .gallery-item {
+  display: inline-block;
+  padding: 1.79104477%;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+#blog .gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+#blog .gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+#blog .gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+#blog .gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+#blog .gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+#blog .gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+#blog .gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+#blog .gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+#blog .gallery .gallery-caption {
+  color: #707070;
+  display: block;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 7px 0;
+}
+#blog .gallery-columns-6 .gallery-caption,
+#blog .gallery-columns-7 .gallery-caption,
+#blog .gallery-columns-8 .gallery-caption,
+#blog .gallery-columns-9 .gallery-caption {
+  display: none;
+}
+#blog .mce-content-body .wpview-wrap {
+  margin-bottom: 32px;
+}
+#blog .mce-content-body .wp-audio-playlist {
+  margin: 0;
+}
+#blog body.rtl {
+  font-family: Arial, Tahoma, sans-serif;
+}
+#blog .rtl blockquote {
+  border-left: none;
+  border-right: 4px solid #707070;
+  margin: 0 -21px 35px 0;
+  padding-left: 0;
+  padding-right: 17px;
+}
+#blog .rtl blockquote > blockquote {
+  margin-left: auto;
+  margin-right: 0;
+}
+#blog .rtl li > ul,
+#blog .rtl li > ol {
+  margin: 0 23px 0 0;
+}
+#blog .rtl table th,
+#blog .rtl table caption {
+  text-align: right;
+}

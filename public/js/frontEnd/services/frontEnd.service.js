@@ -1,5 +1,5 @@
 angular.module("FrontEndModule")
-    .factory('FrontEndFactory',[function() {
+    .factory('frontEndFactory',[function() {
         
         var projectsFactory = { 
             projects :[

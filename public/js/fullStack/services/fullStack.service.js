@@ -1,5 +1,5 @@
 angular.module("FullStackModule")
-    .factory('FullStackFactory',[function() {
+    .factory('fullStackFactory',[function() {
         
         var projectsFactory = { 
             projects :[
