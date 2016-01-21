@@ -21,6 +21,16 @@ body {
     color:#fff;
 }
 
+.mdl-mini-footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+
+.mdl-mini-footer--text {
+    text-align:center;
+}
+
 /** Tabs Styles**/
 .nav-bar {
     display:block;
@@ -60,10 +70,16 @@ body {
     width:90%;
     margin: 0 auto;
 }
+
+.mdl-card__title--link {
+ text-decoration: none;   
+}
+
 .mdl-card__title {
     height: 300px;
     background-size: cover;
 }
+
 .mdl-card__title-text {
     color: white;
     padding:10px;

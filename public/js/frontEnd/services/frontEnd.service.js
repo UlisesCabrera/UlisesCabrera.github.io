@@ -6,7 +6,7 @@ angular.module("FrontEndModule")
                 {
                     name: "Simon Game",
                     description: "Replica of the simon game that was popular in the 80's.",
-                    image: {"background-image" : "url(' images/simon-game-project.jpg')"},
+                    image: {"background-image" : "url(' images/frontEndProjects/simon-game-project.jpg')"},
                     source: 'http://codepen.io/ulisescabrera/pen/QjoMVb',
                     live: 'http://codepen.io/ulisescabrera/full/QjoMVb/',
                     userStories:['I am presented with a random series of button presses.',
@@ -23,7 +23,7 @@ angular.module("FrontEndModule")
                 {
                     name: "Tic Tac Toe Game",
                     description: "Unbeatable Tic Tac Toe Game made with angular.js and using the minimax algorithm.",
-                    image: {"background-image" : "url(' images/tictactoe-game-project.jpg')"},
+                    image: {"background-image" : "url(' images/frontEndProjects/tictactoe-game-project.jpg')"},
                     source: 'http://codepen.io/ulisescabrera/pen/Xmyxxr',
                     live: 'http://codepen.io/ulisescabrera/full/Xmyxxr/',
                     userStories:['I can play a game of Tic Tac Toe with the computer.','I can never actually win against the computer - at best I can tie.',
@@ -34,7 +34,7 @@ angular.module("FrontEndModule")
                 {
                     name: "Wikipidia Viewer",
                     description: "A wikipidea app that lets you display search results made to the wiki API and also allow you to see random articles.",
-                    image: {"background-image" : "url(' images/wikipidea-viewer-project.jpg')"},
+                    image: {"background-image" : "url(' images/frontEndProjects/wikipidea-viewer-project.jpg')"},
                     source: 'http://codepen.io/ulisescabrera/pen/OyoRbp',
                     live: 'http://codepen.io/ulisescabrera/full/OyoRbp/',
                     userStories:['I can search Wikipedia entries in a search box and see the resulting Wikipedia entries.','I can click a button to see a random Wikipedia entry.'],
@@ -44,7 +44,7 @@ angular.module("FrontEndModule")
                 {
                     name: "freeCodeCamp News",
                     description: "Redesign the freeCodeCamp news section.",
-                    image: {"background-image" : "url(' images/free-news-project.jpg')"},
+                    image: {"background-image" : "url(' images/frontEndProjects/free-news-project.jpg')"},
                     source: 'http://codepen.io/ulisescabrera/pen/ojMzex',
                     live: 'http://codepen.io/ulisescabrera/full/ojMzex/',
                     userStories: ['I can browse recent posts from Camper News.','I can click on a post to be taken to the story\'s original URL.','I can see how many upvotes each story has.'],
@@ -54,7 +54,7 @@ angular.module("FrontEndModule")
                 {
                     name: "Twitchtv JSON API",
                     description: "Created Interface to display data from the Twitchtv API.",
-                    image: {"background-image" : "url(' images/twitch-viewer-project.jpg')"},
+                    image: {"background-image" : "url(' images/frontEndProjects/twitch-viewer-project.jpg')"},
                     source: 'http://codepen.io/ulisescabrera/pen/meLWaG',
                     live: 'http://codepen.io/ulisescabrera/full/meLWaG/',
                     userStories: ['I can see whether Free Code Camp is currently streaming on Twitch.tv.','I can click the status output and be sent directly to the Free Code Camp\'s Twitch.tv channel.',
@@ -66,7 +66,7 @@ angular.module("FrontEndModule")
                 {
                     name: "Local Weather App",
                     description: "Local Weather app using angular.js and getting the data from the weather underground API.",
-                    image: {"background-image" : "url(' images/weather-project.jpg')"},
+                    image: {"background-image" : "url(' images/frontEndProjects/weather-project.jpg')"},
                     source: 'http://codepen.io/ulisescabrera/pen/JYEgJW',
                     live: 'http://codepen.io/ulisescabrera/full/JYEgJW/',
                     userStories: ['I can see the weather in my current location.','I can see a different icon or background image (e.g. snowy mountain, hot desert) depending on the weather.','I can push a button to toggle between Fahrenheit and Celsius.'],
@@ -76,7 +76,7 @@ angular.module("FrontEndModule")
                 {
                     name: "Pomodoro Clock App",
                     description: "Pomodoro clock app using angular.js, you can add to-dos, see how many pomodoros have you completed and set the length of each pomodoro.",
-                    image: {"background-image" : "url(' images/pomodoro-project.jpg')"},
+                    image: {"background-image" : "url(' images/frontEndProjects/pomodoro-project.jpg')"},
                     source: 'http://codepen.io/ulisescabrera/pen/vNWXpB',
                     live: 'http://codepen.io/ulisescabrera/full/vNWXpB/',
                     userStories: ['I can start a 25 minute pomodoro, and the timer will go off once 25 minutes has elapsed.',
@@ -88,7 +88,7 @@ angular.module("FrontEndModule")
                 {
                     name: "Quote Generator App",
                     description: "Generates random quotes and let you tweet them, built using knockout.js.",
-                    image: {"background-image" : "url(' images/quote-generator-project.jpg')"},
+                    image: {"background-image" : "url(' images/frontEndProjects/quote-generator-project.jpg')"},
                     source: 'http://codepen.io/ulisescabrera/pen/epgLgp',
                     live: 'http://codepen.io/ulisescabrera/full/epgLgp/',
                     userStories:['I can click a button to show me a new random quote.',
@@ -99,7 +99,7 @@ angular.module("FrontEndModule")
                 {
                     name: "Simple Calculator",
                     description: "Simple Calculator built with angular.js.",
-                    image: {"background-image" : "url(' images/calculator-project.jpg')"},
+                    image: {"background-image" : "url(' images/frontEndProjects/calculator-project.jpg')"},
                     source: 'http://codepen.io/ulisescabrera/pen/qOoKmJ',
                     live: 'http://codepen.io/ulisescabrera/full/qOoKmJ/',
                     userStories:['I can add, subtract, multiply and divide two numbers.','I can clear the input field with a clear button.',
@@ -110,7 +110,7 @@ angular.module("FrontEndModule")
                 {
                     name: "Neighborhood Map",
                     description: "A Neighborhood Map that displays info about local restaurants powered by Google Maps, Yelp and Flickr.  Built with knockout.js",
-                    image: {"background-image" : "url(' images/map-neighb-project.jpg')"},
+                    image: {"background-image" : "url(' images/frontEndProjects/map-neighb-project.jpg')"},
                     source: 'https://github.com/UlisesCabrera/frontend-nanodegree-neighborhood-map',
                     live: 'http://ulisescabrera.github.io/frontend-nanodegree-neighborhood-map/dist/',
                     userStories:[],
