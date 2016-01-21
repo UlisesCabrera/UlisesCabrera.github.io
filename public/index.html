@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.grey-deep_orange.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.css" type="text/css" />
-    <link rel="stylesheet" href="css/blog.css" type="text/css" />
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <script type="text/javascript" src="vendors/angular/angular.min.js"></script>
     <script type="text/javascript" src="vendors/angular-route/angular-route.min.js"></script>
@@ -30,7 +29,7 @@
         <div class="nav-bar">
           <div class="nav-bar__inner">
             <div class="nav-tab__container">
-              <a class="nav-tab" href="#/" ng-class="{'nav-tab-active' : current() == 'blog' }" >Blog</a>
+              <a class="nav-tab" href="#/" ng-class="{'nav-tab-active' : current() == 'post' }" >Posts</a>
             </div>
             <div class="nav-tab__container">
               <a class="nav-tab" href="#/fullStack" ng-class="{'nav-tab-active' : current() == 'fullStack' }">Full-Stack Projects</a>
@@ -83,22 +82,23 @@
     <script type="text/javascript" src="js/fullStack/fullStack.module.js"></script>
     <script type="text/javascript" src="js/frontEnd/frontEnd.module.js"></script>
     <script type="text/javascript" src="js/microservice/microservice.module.js"></script>
-    <script type="text/javascript" src="js/blog/blog.module.js"></script>
+    <script type="text/javascript" src="js/posts/posts.module.js"></script>
     
     <!-- Services-->
     <script type="text/javascript" src="js/fullStack/services/fullStack.service.js"></script>
     <script type="text/javascript" src="js/frontEnd/services/frontEnd.service.js"></script>
     <script type="text/javascript" src="js/microservice/services/microservice.service.js"></script>
-    <script type="text/javascript" src="js/blog/services/blog.service.js"></script>
+    <script type="text/javascript" src="js/posts/services/posts.service.js"></script>
 
     <!-- Controllers-->
     <script type="text/javascript" src="js/homePage/controllers/homePage.controller.js"></script>
     <script type="text/javascript" src="js/fullStack/controllers/fullStack.controller.js"></script>
     <script type="text/javascript" src="js/frontEnd/controllers/frontEnd.controller.js"></script>
     <script type="text/javascript" src="js/microservice/controllers/microservice.controller.js"></script>
-    <script type="text/javascript" src="js/blog/controllers/blog.controller.js"></script>
+    <script type="text/javascript" src="js/posts/controllers/posts.controller.js"></script>
     
     <!-- Main Module-->
     <script type="text/javascript" src="js/app.js"></script>
+    
   </body>
 </html>
