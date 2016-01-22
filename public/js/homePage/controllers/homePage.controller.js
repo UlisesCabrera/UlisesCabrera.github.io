@@ -16,7 +16,10 @@ angular.module("HomePageModule")
                     break;
                 case '/microservice':
                     location = 'microservice';
-                    break;                    
+                    break;
+                case '/aboutMe':
+                    location = 'aboutMe';
+                    break;                      
                 default:
                     location = 'blog';
             }

@@ -93,6 +93,6 @@ body {
 /** Desktop Styles**/
 @media (min-width: 815px) {
     .nav-tab__container {
-            width:25%;
+            width:20%;
     }
 }

@@ -1,4 +1,4 @@
-angular.module('2016-Portfolio',['HomePageModule', 'ngRoute','FullStackModule','FrontEndModule','MicroserviceModule','PostModule'])
+angular.module('2016-Portfolio',['HomePageModule', 'ngRoute','FullStackModule','FrontEndModule','AboutMeModule','MicroserviceModule','PostModule'])
 .config(function($routeProvider, $locationProvider){
 	$routeProvider
 		.when('/', {
@@ -16,6 +16,10 @@ angular.module('2016-Portfolio',['HomePageModule', 'ngRoute','FullStackModule','
 		.when('/microservice', {
 			templateUrl:'./partials/microservice.html',
 			controller: 'MicroserviceController'
+		})
+		.when('/aboutMe', {
+			templateUrl:'./partials/aboutMe.html',
+			controller: 'AboutMeController'
 		})			
 		.otherwise({
 		 	redirectTo: "/"
