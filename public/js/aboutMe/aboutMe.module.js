@@ -1,1 +1,1 @@
-angular.module("AboutMeModule",[]);
+angular.module("AboutMeModule",['chart.js']);

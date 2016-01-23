@@ -2,6 +2,36 @@ body {
     background-image: url('../images/white_brick_wall.png');
 }
 
+/** About Me **/
+.mdl-cell__aboutMe-profile-picture {
+    max-width:150px;
+    width:100%;
+    display:block;
+    margin: 0 auto;
+    border-radius:50%;
+}
+
+.mdl-cell__aboutMe-title {
+    text-align:center;
+    font-size:3rem;
+    color:rgb(255,110,64);
+    margin-top:0;
+}
+
+.mdl-cell__aboutMe-category {
+    text-align:center;
+    font-size:2rem;
+    color:rgb(255,110,64);
+}
+
+.mdl-cell__aboutMe-text {
+    margin:0 auto;
+    font-size: 1.5rem;
+    line-height:2;
+    text-align:center;
+    color:#424242;
+}
+
 /** Drawer Styles**/
 .mdl-layout__drawer {
     background-image: url('../images/dark_brick_wall.png');
@@ -53,7 +83,7 @@ body {
     padding: 15px;
     text-decoration: none;
     color:#fff;
-    font-size :1.2rem;
+    font-size :0.90rem;
 }
 
 .nav-tab:hover {
@@ -94,5 +124,8 @@ body {
 @media (min-width: 815px) {
     .nav-tab__container {
             width:20%;
+    }
+    .mdl-cell__aboutMe-text { 
+        width: 80%;
     }
 }
