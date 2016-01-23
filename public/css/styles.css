@@ -15,7 +15,7 @@ body {
     text-align:center;
     font-size:3rem;
     color:rgb(255,110,64);
-    margin-top:0;
+    margin:0;
 }
 
 .mdl-cell__aboutMe-category {
@@ -25,7 +25,7 @@ body {
 }
 
 .mdl-cell__aboutMe-text {
-    margin:0 auto;
+    margin:0 auto 50px;
     font-size: 1.5rem;
     line-height:2;
     text-align:center;
