@@ -107,6 +107,8 @@ body {
 
 .mdl-card__title {
     height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .mdl-card__title-text {
