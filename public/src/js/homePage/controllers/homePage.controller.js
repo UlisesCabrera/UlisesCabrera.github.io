@@ -6,13 +6,13 @@ angular.module("HomePageModule")
             var location;
             switch ($location.path()) {
                 case '/':
-                    location = 'blog';
+                    location = 'frontEnd';
                     break;
                 case '/fullStack':
                     location = 'fullStack';
                     break;
-                case '/frontEnd':
-                    location = 'frontEnd';
+                case '/post':
+                    location = 'post';
                     break;
                 case '/microservice':
                     location = 'microservice';
@@ -21,7 +21,7 @@ angular.module("HomePageModule")
                     location = 'aboutMe';
                     break;                      
                 default:
-                    location = 'blog';
+                    location = 'frontEnd';
             }
         
             return location;

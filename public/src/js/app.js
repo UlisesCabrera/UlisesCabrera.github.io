@@ -2,16 +2,16 @@ angular.module('2016-Portfolio',['HomePageModule', 'ngRoute','FullStackModule','
 .config(function($routeProvider, $locationProvider){
 	$routeProvider
 		.when('/', {
-			templateUrl:'./partials/post.html',
-			controller: 'PostController'
+			templateUrl:'./partials/frontEnd.html',
+			controller: 'FrontEndController'
 		})
 		.when('/fullStack', {
 			templateUrl:'./partials/fullstack.html',
 			controller: 'FullStackController'
 		})
-		.when('/frontEnd', {
-			templateUrl:'./partials/frontEnd.html',
-			controller: 'FrontEndController'
+		.when('/post', {
+			templateUrl:'./partials/post.html',
+			controller: 'PostController'
 		})
 		.when('/microservice', {
 			templateUrl:'./partials/microservice.html',
