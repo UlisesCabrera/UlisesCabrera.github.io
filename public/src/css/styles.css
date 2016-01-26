@@ -52,15 +52,10 @@ body {
 }
 
 .mdl-mini-footer {
-  text-align:center;
   box-sizing:border-box;
   position:absolute;
   bottom:0;
   width:100%;
-}
-
-.mdl-mini-footer--text {
-    text-align:center;
 }
 
 /** Tabs Styles**/
