@@ -75,6 +75,11 @@ body {
 }
 
 /** Tabs Styles**/
+
+.mdl-layout__header {
+   background-color: rgb(158,158,158); 
+   background-color: rgba(158,158,158,.65); 
+}
 .nav-bar {
     display:block;
 }
