@@ -33,6 +33,22 @@ body {
 }
 
 /** Drawer Styles**/
+
+.mdl-layout__drawer>.mdl-layout__title, .mdl-layout__drawer>.mdl-layout-title {
+    padding-left:0;
+    line-height: 1;
+    padding-top:20px;
+    text-align:center;
+}
+
+.mdl-layout-subtitle {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: rgb(158,158,158);
+    font-size: 0.95rem;
+}
+
 .mdl-layout__drawer {
     background-image: url('../images/dark_brick_wall.png');
     color:rgb(255,110,64);
