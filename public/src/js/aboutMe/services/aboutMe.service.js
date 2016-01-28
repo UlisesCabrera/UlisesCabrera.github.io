@@ -5,7 +5,7 @@ angular.module('AboutMeModule')
             var aboutMeInfo = {
                 name : "Ulises Cabrera",
                 profile_picture: "images/Profile-Picture.png",
-                aboutMe: "I am a front-end nanodegree graduate, task-driven and go-getter who loves the challenge of coding. Finishing my nanodegree at Udacity was just the beginning of my journey, currently I\'m learning to Build Modern Web Apps with the MEAN stack.",
+                aboutMe: "I am a motivated front-end developer with knowledge in Javascript, Jquery, bootstrap and the MEAN stack. I enjoy building new stuff and pushing my skills to their limits. I am hardworking and a fast learner with good communication skills and a strong design background.",
                 projects: { 
                     projectsName: ['Front-End', 'Full Stack', 'Microservices'],
                     projectsCount:[14 , 1, 5]
