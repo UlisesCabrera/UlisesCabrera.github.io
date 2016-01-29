@@ -1,6 +1,6 @@
 /*global angular*/
 angular.module('AboutMeModule')
-        .factory('aboutMeFactory',['$resource',function($resource) {
+        .factory('aboutMeFactory',[function() {
     
             var aboutMeInfo = {
                 name : "Ulises Cabrera",

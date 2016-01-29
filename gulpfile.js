@@ -20,19 +20,16 @@ gulp.task('scripts', function () {
 		'public/src/js/fullStack/fullStack.module.js',
 		'public/src/js/homePage/homePage.module.js',
 		'public/src/js/microservice/microservice.module.js',
-		'public/src/js/posts/posts.module.js',
 		'public/src/js/aboutMe/services/aboutMe.service.js',
 		'public/src/js/frontEnd/services/frontEnd.service.js',
 		'public/src/js/fullStack/services/fullStack.service.js',
 		'public/src/js/homePage/services/homePage.service.js',
 		'public/src/js/microservice/services/microservice.service.js',
-		'public/src/js/posts/services/posts.service.js',
 		'public/src/js/aboutMe/controllers/aboutMe.controller.js',
 		'public/src/js/frontEnd/controllers/frontEnd.controller.js',
 		'public/src/js/fullStack/controllers/fullStack.controller.js',
 		'public/src/js/homePage/controllers/homePage.controller.js',
 		'public/src/js/microservice/controllers/microservice.controller.js',
-		'public/src/js/posts/controllers/posts.controller.js',
 		'public/src/js/app.js'])
     .pipe(plumber())
 		.pipe(concat('app.bundle.min.js'))

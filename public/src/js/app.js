@@ -1,4 +1,4 @@
-angular.module('2016-Portfolio',['HomePageModule', 'ngRoute','FullStackModule','FrontEndModule','AboutMeModule','MicroserviceModule','PostModule'])
+angular.module('2016-Portfolio',['HomePageModule', 'ngRoute','FullStackModule','FrontEndModule','AboutMeModule','MicroserviceModule'])
 .config(function($routeProvider, $locationProvider){
 	$routeProvider
 		.when('/', {
@@ -8,10 +8,6 @@ angular.module('2016-Portfolio',['HomePageModule', 'ngRoute','FullStackModule','
 		.when('/fullStack', {
 			templateUrl:'./partials/fullstack.html',
 			controller: 'FullStackController'
-		})
-		.when('/post', {
-			templateUrl:'./partials/post.html',
-			controller: 'PostController'
 		})
 		.when('/microservice', {
 			templateUrl:'./partials/microservice.html',
