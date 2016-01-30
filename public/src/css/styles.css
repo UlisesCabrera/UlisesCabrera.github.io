@@ -182,6 +182,21 @@ body {
 }
 
 /** Card Styles**/
+.project-section {
+    text-align:center;
+    border-bottom:1px dashed black;
+    width:75%;
+    font-size: 2em;
+    display:block;
+    padding-bottom:10px;
+    margin:0 auto 20px; 
+}
+
+.project-section h3 {
+    color : rgb(255,110,64);
+    font-size:1em;
+}
+
 .mdl-card {
     width:90%;
     margin: 0 auto;
