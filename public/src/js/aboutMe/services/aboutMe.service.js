@@ -1,7 +1,7 @@
-/*global angular*/
+/*global randomColor, angular*/
 angular.module('AboutMeModule')
         .factory('aboutMeFactory',[function() {
-    
+            
             var aboutMeInfo = {
                 name : "Ulises Cabrera",
                 profile_picture: "images/Profile-Picture.png",
@@ -10,13 +10,63 @@ angular.module('AboutMeModule')
                     projectsName: ['Front-End', 'Full Stack', 'Microservices'],
                     projectsCount:[14 , 1, 5]
                 },
-                skills: {
-                    skillsName: ['HTML5','CSS','Javascript', 'angular.js','node.js', 'express.js', 'mongoDB','Git','Bootstrap', 'Photoshop'],
-                    skillsKnowledge:[8,8,7, 5, 5, 4, 6, 5,8, 7]
-                }
+                skills: [
+                    {
+                        name: 'HTML5'
+                    },
+                    {
+                        name:'CSS'
+                    },
+                    {
+                        name:'Javascript'
+                    },
+                    {
+                        name: 'Angular.js'
+                    },
+                    {
+                        name:'Node.js'
+                    },
+                    {
+                        name:'Express.js'
+                    },
+                    {
+                        name:'MongoDB'
+                    },
+                    {
+                        name:'Git'
+                    },
+                    {
+                        name:'Bootstrap'
+                    },
+                    {
+                        name: 'Photoshop'
+                    },
+                    {
+                        name: 'HTML Emails'
+                    },
+                    {
+                        name: 'LESS'
+                    },
+                    {
+                        name:'InDesign'
+                    },
+                    {
+                        name:'Knockout.js'
+                    },
+                    {
+                        name: 'Jquery'
+                    }
+                ]
             };
-
             
+            // getting random colors
+            var skillsColors = randomColor({ count: aboutMeInfo.skills.length, luminosity: 'dark'});
+            
+            //pushing adding colors to skill objects
+            skillsColors.forEach(function(color, idx){
+                aboutMeInfo.skills[idx].styleCSS = {"border" : "1px solid "+ color, "color" : color};
+            });
+
             return aboutMeInfo;
             
     

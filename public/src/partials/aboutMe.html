@@ -1,24 +1,23 @@
 <div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--12-col">
-      <img class="mdl-cell__aboutMe-profile-picture" ng-src="{{aboutMeInfo.profile_picture}}" alt="">
-  </div>    
-  <div class="mdl-cell mdl-cell--12-col">    
-    <h1 class="mdl-cell__aboutMe-title">{{ aboutMeInfo.name }}</h1>
- </div>
-  <div class="mdl-cell mdl-cell--12-col">
-      <p class="mdl-cell__aboutMe-text">{{ aboutMeInfo.aboutMe }}</p>
+<div class="mdl-card mdl-card-aboutMe mdl-shadow--6dp animated zoomInDown">
+  <div class="mdl-card__title-aboutMe">
+    <img class="mdl-cell__aboutMe-profile-picture" ng-src="{{aboutMeInfo.profile_picture}}" alt="{{aboutMeInfo.name}}">  
+    <h2 class="mdl-cell__aboutMe-title">{{ aboutMeInfo.name }}</h2>
   </div>
-  <hr>
-   <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-     <h2 class="mdl-cell__aboutMe-category">Skills: </h2>
-     <canvas id="doughnut" class="chart chart-doughnut" 
-  chart-data="skillsData" chart-labels="skillsLabels" chart-legend="true" chart-colours="skillsColors">
-  </canvas> 
-   </div>
-  <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
-    <h2 class="mdl-cell__aboutMe-category">Projects: </h2>
-    <canvas id="pie" class="chart chart-pie"
+  <div>
+        <p class="mdl-cell__aboutMe-text">{{ aboutMeInfo.aboutMe }}</p>
+  </div>
+  <div class="mdl-layout-spacer-vertical"></div>
+  <h4 class="mdl-cell__aboutMe-subHeading">Skills:</h4>
+  <ul class="mdl-cell__aboutMe-list" >
+      <li class="mdl-cell__aboutMe-skillsBox" ng-style="skill.styleCSS" ng-repeat="skill in aboutMeInfo.skills">{{ skill.name }}</li>
+  </ul>
+ <div class="mdl-layout-spacer-vertical"></div>
+ <h4 class="mdl-cell__aboutMe-subHeading">Projects:</h4>
+  <div>
+      <canvas id="pie" class="chart chart-pie"
   chart-data="projectsData" chart-colours="projectColors" chart-labels="projectsLabels" chart-legend="true">
     </canvas> 
-  </div>   
+  </div>
+ </div>
 </div>
