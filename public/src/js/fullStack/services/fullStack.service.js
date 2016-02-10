@@ -9,7 +9,7 @@ angular.module("FullStackModule")
                     image: {"background-image" : "url(' images/fullStackProjects/night-life-coord-project.jpg')"},
                     source: 'https://github.com/UlisesCabrera/nightlife-coordinator',
                     live: 'https://d-night-life.herokuapp.com/',
-                    post:'http://www.ulisescabrera.com/blog/2016/02/09/building-a-night…coordination-app/',
+                    post:'http://www.ulisescabrera.com/blog/2016/02/09/building-a-nightlife-coordination-app/',
                     userStories:['As an unauthenticated user, I can view all bars in my area.',
                     'As an authenticated user, I can add myself to a bar to indicate I am going there tonight.',
                     'As an authenticated user, I can remove myself from a bar if I no longer want to go there.',
