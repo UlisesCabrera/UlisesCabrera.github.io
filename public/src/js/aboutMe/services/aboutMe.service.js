@@ -8,7 +8,7 @@ angular.module('AboutMeModule')
                 aboutMe: "I am a motivated front-end developer with knowledge in Javascript, Jquery, bootstrap and the MEAN stack. I enjoy building new stuff and pushing my skills to their limits. I am hardworking and a fast learner with good communication skills and a strong design background.",
                 projects: { 
                     projectsName: ['Front-End', 'Full Stack', 'Microservices'],
-                    projectsCount:[14 , 1, 5]
+                    projectsCount:[14 , 2, 5]
                 },
                 skills: [
                     {

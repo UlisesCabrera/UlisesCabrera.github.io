@@ -4,6 +4,20 @@ angular.module("FullStackModule")
         var projectsFactory = { 
             projects :[
                 {
+                    name: "Nightlife Coordination App",
+                    description: "It's an app to help users find the local bars using their current location or by searching on the map, it lets them add themselves to a list of 'People going'  and they can also remove themselves from the list. Keeping track of how many people are going to each bar will help the users decide where they want to go tonight. The app was built with the MEAN stack with the combination of the Yelp API to get the all the info for the local bars and using Google maps to display the location of each bar.",
+                    image: {"background-image" : "url(' images/fullStackProjects/night-life-coord-project.jpg')"},
+                    source: 'https://github.com/UlisesCabrera/nightlife-coordinator',
+                    live: 'https://d-night-life.herokuapp.com/',
+                    post:'http://www.ulisescabrera.com/blog/2016/02/09/building-a-night…coordination-app/',
+                    userStories:['As an unauthenticated user, I can view all bars in my area.',
+                    'As an authenticated user, I can add myself to a bar to indicate I am going there tonight.',
+                    'As an authenticated user, I can remove myself from a bar if I no longer want to go there.',
+                    'As an unauthenticated user, when I login I should not have to search again.'],
+                    school: 'freeCodeCamp',
+                    date: 'February 2016'
+                },                
+                {
                     name: "Voting App",
                     description: "A dynamic app made with the MEAN (MongoDB, Express, Angular and Node) stack, using passport.js to handle the authentication process with local and social media accounts (Facebook, LinkedIn, Google+, Twitter and GitHub).  Mongoose was used to abstract the methods that interact with the MongoDB database and create schemas for the documents.  Each poll created can be shared to Facebook, Twitter and Google+ and the results are presented using Chart.js.",
                     image: {"background-image" : "url(' images/fullStackProjects/poll-app-project.jpg')"},
