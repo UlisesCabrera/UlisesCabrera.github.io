@@ -2,7 +2,44 @@ angular.module("FrontEndModule")
     .factory('frontEndFactory',[function() {
         
         var projectsFactory = { 
-            projects :[
+            projects :[{
+                    name: "Recipe Box",
+                    description: "Simple App to store food recipes, built with React.js",
+                    image: {"background-image" : "url(' images/frontEndProjects/recipe-box-project.jpg')"},
+                    source: 'http://codepen.io/ulisescabrera/pen/zqxrXG/',
+                    live: 'http://codepen.io/ulisescabrera/full/zqxrXG/',
+                    userStories: ["I can see an index view where the names of all the recipes are visible.",
+                                  "I can click into any of those recipes to view it.",
+                                  "I can edit these recipes.",
+                                  "I can delete these recipes.",
+                                  "All new recipes I add are saved in my browser's local storage. If I refresh the page, these recipes will still be there."],
+                    school: 'freeCodeCamp',
+                    date: 'March 2016',
+                    primaryFramework: 'React.js'
+                },{
+                    name: "Camper Leaderboard",
+                    description: "Build Camper Leaderboard section.",
+                    image: {"background-image" : "url(' images/frontEndProjects/camper-leaderboard-project.jpg')"},
+                    source: 'http://codepen.io/ulisescabrera/pen/oxvdbL/',
+                    live: 'http://codepen.io/ulisescabrera/full/oxvdbL/',
+                    userStories: ["I can see a table of the Free Code Camp campers who've earned the most brownie points in the past 30 days.",
+                                 "I can see how many brownie points they've earned in the past 30 days, and how many they've earned total.",
+                                 "I can toggle between sorting the list by how many bronwie points they've earned in the past 30 days and by how many brownie points they've earned total."],
+                    school: 'freeCodeCamp',
+                    date: 'February 2016',
+                    primaryFramework: 'React.js'
+                },{
+                    name: "Markdown Previewer",
+                    description: "Live Markdown previewer, render HTML from Markdown on the fly.",
+                    image: {"background-image" : "url(' images/frontEndProjects/markdown-previewer-project.jpg')"},
+                    source: 'http://codepen.io/ulisescabrera/pen/vGBBKQ/',
+                    live: 'http://codepen.io/ulisescabrera/full/vGBBKQ/',
+                    userStories: ['I can type GitHub-flavored Markdown into a text area.',
+                                  'I can see a preview of the output of my markdown that is updated as I type.'],
+                    school: 'freeCodeCamp',
+                    date: 'March 2016',
+                    primaryFramework: 'React.js'
+                },
                 {
                     name: "Simon Game",
                     description: "Replica of the simon game that was popular in the 80's.",
@@ -18,7 +55,8 @@ angular.module("FrontEndModule")
                     'I can play in strict mode where if I get a button press wrong, it notifies me that I have done so, and the game restarts at a new random series of button presses.',
                     'I can win the game by getting a series of 20 steps correct. I am notified of my victory, then the game starts over.'],
                     school: 'freeCodeCamp',
-                    date: 'November 2015'
+                    date: 'November 2015',
+                    primaryFramework: 'Angular.js'
                 },
                 {
                     name: "Tic Tac Toe Game",
@@ -29,7 +67,8 @@ angular.module("FrontEndModule")
                     userStories:['I can play a game of Tic Tac Toe with the computer.','I can never actually win against the computer - at best I can tie.',
                     'My game will reset as soon as it\'s over so I can play again.','I can choose whether I want to play as X or O.'],
                     school: 'freeCodeCamp',
-                    date: 'November 2015'
+                    date: 'November 2015',
+                    primaryFramework: 'Angular.js'
                 },                
                 {
                     name: "Wikipidia Viewer",
@@ -39,7 +78,8 @@ angular.module("FrontEndModule")
                     live: 'http://codepen.io/ulisescabrera/full/OyoRbp/',
                     userStories:['I can search Wikipedia entries in a search box and see the resulting Wikipedia entries.','I can click a button to see a random Wikipedia entry.'],
                     school: 'freeCodeCamp',
-                    date: 'November 2015'
+                    date: 'November 2015',
+                    primaryFramework: 'Angular.js'
                 },                
                 {
                     name: "freeCodeCamp News",
@@ -49,7 +89,8 @@ angular.module("FrontEndModule")
                     live: 'http://codepen.io/ulisescabrera/full/ojMzex/',
                     userStories: ['I can browse recent posts from Camper News.','I can click on a post to be taken to the story\'s original URL.','I can see how many upvotes each story has.'],
                     school: 'freeCodeCamp',
-                    date: 'November 2015'
+                    date: 'November 2015',
+                    primaryFramework: 'Angular.js'
                 },
                 {
                     name: "Twitchtv JSON API",
@@ -61,7 +102,8 @@ angular.module("FrontEndModule")
                     'if a Twitch user is currently streaming, I can see additional details about what they are streaming.',
                     'I will see a placeholder notification if a streamer has closed their Twitch account (or the account never existed). You can verify this works by adding brunofin and comster404 to your array of Twitch streamers.'],
                     school: 'freeCodeCamp',
-                    date: 'November 2015'
+                    date: 'November 2015',
+                    primaryFramework: 'Angular.js'
                 },                     
                 {
                     name: "Local Weather App",
@@ -71,7 +113,8 @@ angular.module("FrontEndModule")
                     live: 'http://codepen.io/ulisescabrera/full/JYEgJW/',
                     userStories: ['I can see the weather in my current location.','I can see a different icon or background image (e.g. snowy mountain, hot desert) depending on the weather.','I can push a button to toggle between Fahrenheit and Celsius.'],
                     school: 'freeCodeCamp',
-                    date: 'November 2015'
+                    date: 'November 2015',
+                    primaryFramework: 'Angular.js'
                 },                
                 {
                     name: "Pomodoro Clock App",
@@ -83,7 +126,8 @@ angular.module("FrontEndModule")
                     'I can reset the clock for my next pomodoro.',
                     'I can customize the length of each pomodoro.'],
                     school: 'freeCodeCamp',
-                    date: 'October 2015'
+                    date: 'October 2015',
+                    primaryFramework: 'Angular.js'
                 },
                 {
                     name: "Quote Generator App",
@@ -94,7 +138,8 @@ angular.module("FrontEndModule")
                     userStories:['I can click a button to show me a new random quote.',
                     'I can press a button to tweet out a quote.'],
                     school: 'freeCodeCamp',
-                    date: 'October 2015'
+                    date: 'October 2015',
+                    primaryFramework: 'Knockout.js'
                 },
                 {
                     name: "Simple Calculator",
@@ -105,7 +150,8 @@ angular.module("FrontEndModule")
                     userStories:['I can add, subtract, multiply and divide two numbers.','I can clear the input field with a clear button.',
                     'I can keep chaining mathematical operations together until I hit the equal button, and the calculator will tell me the correct output.'],
                     school: 'freeCodeCamp',
-                    date: 'October 2015'
+                    date: 'October 2015',
+                    primaryFramework: 'Angular.js'
                 },
                 {
                     name: "Neighborhood Map",
@@ -115,7 +161,8 @@ angular.module("FrontEndModule")
                     live: 'http://ulisescabrera.github.io/frontend-nanodegree-neighborhood-map/dist/',
                     userStories:[],
                     school: 'Udacity',
-                    date: 'August 2015'
+                    date: 'August 2015',
+                    primaryFramework: 'Knockout.js'
                 }
         ]};
         
