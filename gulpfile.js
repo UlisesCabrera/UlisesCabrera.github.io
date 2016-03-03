@@ -30,6 +30,7 @@ gulp.task('scripts', function () {
 		'public/src/js/fullStack/controllers/fullStack.controller.js',
 		'public/src/js/homePage/controllers/homePage.controller.js',
 		'public/src/js/microservice/controllers/microservice.controller.js',
+		'public/src/js/frontEnd/filters/frontEnd.filter.js',
 		'public/src/js/app.js'])
     .pipe(plumber())
 		.pipe(concat('app.bundle.min.js'))

@@ -1,8 +1,29 @@
  <div class="mdl-grid">
   <div class="mdl-cell mdl-cell--12-col mdl-cell--hide-desktop mdl-cell--hide-tablet project-section"> 
      <h3>Front-End Projects</h3>
-   </div>
-    <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-cell--top animated zoomInDown" ng-repeat="project in projects">
+  </div>
+    <div class='mdl-cell mdl-cell--12-col'>
+       <h5>Filter by Web Framework:</h5>
+      <div class='input-inner-wrapper'>
+        <div class='mdl-cell_radioButtons'>
+          <input type="radio" ng-model='frameworkProjects.framework' name="frameworkFilter" id='framework-all' value="all">
+          <label for="framework-all">All</label>
+        </div>
+        <div class='mdl-cell_radioButtons'>
+          <input type="radio" ng-model='frameworkProjects.framework' name="frameworkFilter"  id='framework-angular' value="Angular.js">
+          <label for="framework-angular">Angular.js</label>
+        </div>
+        <div class='mdl-cell_radioButtons'>
+          <input type="radio" id='framework-react' name="frameworkFilter" ng-model='frameworkProjects.framework' value="React.js">
+          <label for="framework-react">React.js</label>
+        </div>
+        <div class='mdl-cell_radioButtons'>
+          <input type="radio" id='framework-knockout' name="frameworkFilter" ng-model='frameworkProjects.framework' value="Knockout.js">
+          <label for="framework-knockout">Knockout.js</label>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-cell--top animated zoomInDown" ng-repeat="project in projects | filterByFramework:frameworkProjects.framework">
       <div class="mdl-card mdl-shadow--4dp">
         <a class="mdl-card__title--link" href="{{project.live}}" target="_blank">
           <div class="mdl-card__title mdl-card--expand" ng-style="project.image">
