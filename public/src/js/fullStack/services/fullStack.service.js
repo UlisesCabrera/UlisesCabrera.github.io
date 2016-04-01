@@ -1,8 +1,23 @@
+/*global angular*/
+
 angular.module("FullStackModule")
     .factory('fullStackFactory',[function() {
         
         var projectsFactory = { 
             projects :[
+                {
+                    name: "Manage a Book Trading App",
+                    description:"It's an app that allows you to catalogue your books online (just the image and name, not the actual book since it's not a real app), see all of the books the users own, request to borrow other users'books and easily manage books and request from your dashboard.  Built with the MEAN Stack using passport.js to support user authentication.",
+                    image: {"background-image" : "url(' images/fullStackProjects/book-trading-app-project.jpg')"},
+                    source: 'https://github.com/UlisesCabrera/book-trading-club',
+                    live: 'https://book-trading-clb.herokuapp.com/',
+                    userStories:['I can update my settings to store my full name, city, and state.',
+                    'I can view all books posted by every user.',
+                    'I can add a new book.',
+                    'I can propose a trade and wait for the other user to accept the trade.'],
+                    school: 'freeCodeCamp',
+                    date: 'April 2016'
+                },                
                 {
                     name: "Chart the Stock Market App",
                     description:"It's an app built to track market stocks, it uses socket.io to sync all clients connected built with the MEAN stack.  It lets the user add, remove and update stocks from the chart, any changes to the chart is view on every client connected. The data is coming from the Quandl financial API and the chart is built with the highchart library.",
