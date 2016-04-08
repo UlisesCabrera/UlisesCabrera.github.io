@@ -6,6 +6,23 @@ angular.module("FullStackModule")
         var projectsFactory = { 
             projects :[
                 {
+                    name: "Pinterest Clone",
+                    description:"It’s Pinterest clone app, built with the MEAN stack.  It let you login with your Twitter account, link images to the app and see a Pinterest-style wall of all the images (with masonry.js).  It also detects if an image is broken and gets replaced by a placeholder image.",
+                    image: {"background-image" : "url(' images/fullStackProjects/pinterest-clone-app-project.jpg')"},
+                    source: 'https://github.com/UlisesCabrera/pinterest-clone-fcc',
+                    live: 'https://pin-yours.herokuapp.com/',
+                    userStories:[
+                    'As an unauthenticated user, I can login with Twitter.',
+                    'As an authenticated user, I can link to images.',
+                    'As an authenticated user, I can delete images that I\'ve linked to.',
+                    'As an authenticated user, I can see a Pinterest-style wall of all the images I\'ve linked to.',
+                    'As an unauthenticated user, I can browse other users\' walls of images.',
+                    'As an authenticated user, if I upload an image that is broken, it will be replaced by a placeholder image.'
+                    ],
+                    school: 'freeCodeCamp',
+                    date: 'April 2016'
+                },                  
+                {
                     name: "Manage a Book Trading App",
                     description:"It's an app that allows you to catalogue your books online (just the image and name, not the actual book since it's not a real app), see all of the books the users own, request to borrow other users'books and easily manage books and request from your dashboard.  Built with the MEAN Stack using passport.js to support user authentication.",
                     image: {"background-image" : "url(' images/fullStackProjects/book-trading-app-project.jpg')"},
