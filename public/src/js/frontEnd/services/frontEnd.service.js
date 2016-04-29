@@ -3,6 +3,21 @@ angular.module("FrontEndModule")
         
         var projectsFactory = { 
             projects :[{
+                    name: "The Game of life",
+                    description: "The \"game\" is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves, or, for advanced \"players\", by creating patterns with particular properties. (wikipidea)",
+                    image: {"background-image" : "url(' images/frontEndProjects/game-of-life-project.jpg')"},
+                    source: 'http://codepen.io/ulisescabrera/pen/oxpQzN/',
+                    live: 'http://codepen.io/ulisescabrera/full/oxpQzN/',
+                    userStories: ["When I first arrive at the game, it will randomly generate a board and start playing.",
+                                  "I can start and stop the board.",
+                                  "I can set up the board.",
+                                  "I can clear the board.",
+                                  "When I press start, the game will play out.",
+                                  "Each time the board changes, I can see how many generations have gone by."],
+                    school: 'freeCodeCamp',
+                    date: 'April 2016',
+                    primaryFramework: 'React.js'
+                },{
                     name: "Recipe Box",
                     description: "Simple App to store food recipes, built with React.js",
                     image: {"background-image" : "url(' images/frontEndProjects/recipe-box-project.jpg')"},
