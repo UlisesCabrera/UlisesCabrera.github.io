@@ -296,12 +296,7 @@ h5 {
 /** Desktop Styles**/
 @media (min-width: 930px) {
     .nav-tab__container {
-            width:19%;
+            width:25%;
             margin:10px auto;            
-            border-right:1px dashed rgb(255,110,64);
     }
-
-    .last-container {
-            border-right:none;
-    }    
 }
